@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_account_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/create_account_title"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <!-- Username input -->
+    <EditText
+        android:id="@+id/username_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:background="#FFFFFF"
+        android:maxLines="1" />
+
+    <!-- Password input -->
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:background="#FFFFFF"
+        android:maxLines="1" />
+
+    <!-- Confirm password input -->
+    <EditText
+        android:id="@+id/confirm_password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:background="#FFFFFF"
+        android:maxLines="1" />
+
+    <!-- Create account button -->
+    <Button
+        android:id="@+id/create_account_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/create_account_button" />
+
+</LinearLayout>

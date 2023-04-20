@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Add a TextView to display the weight value -->
+    <TextView
+        android:id="@+id/weight_value_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight value:" />
+
+    <!-- Add an EditText to allow the user to edit the weight value -->
+    <EditText
+        android:id="@+id/weight_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/edit_the_weight"
+        android:textSize="16sp"
+        android:background="@color/colorTextPrimary"/>
+
+    <TextView
+        android:id="@+id/date_value_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: " />
+    <EditText
+        android:id="@+id/date_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/date_hint"
+        android:inputType="date"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:background="@color/colorTextPrimary"/>
+
+    <!-- Add a Button to save the changes made by the user -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save changes" />
+
+</LinearLayout>

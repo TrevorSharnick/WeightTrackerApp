@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">WeightTracker</string>
+    <string name="daily_weight_entry">Enter a new daily weight</string>
+    <string name="daily_weight_title_label">Daily Weight</string>
+    <string name="list_item_weight_title">Daily Weight</string>
+    <string name="list_item_weight_date">Date</string>
+    <string name="date_of_weight">Date of entry</string>
+    <string name="add_button">Add Daily Weight</string>
+    <string name="settings_button">Settings</string>
+    <string name="settings_icon_title">Settings</string>
+    <string name="login_title">WeightTracker</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="create_account_button">Create Account</string>
+    <string name="goal_weight_icon">Set Goal Weight</string>
+    <string name="save_changes_button">Save Changes</string>
+    <string name="empty_weight_fields_error">Invalid entry</string>
+    <string name="add_daily_weight_title">Daily Weight</string>
+    <string name="weight_value_hint">Enter a your current weight</string>
+    <string name="save_button_label">Submit</string>
+    <string name="add_daily_weight_title_text">Daily Weight</string>
+    <string name="settings_title">Settings</string>
+    <string name="sms_permission_request">Allow SMS notifications?</string>
+    <string name="grant_permission">Grant Permissions</string>
+    <string name="permission_status">Permission Status</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="goal_weight_notification">Enable Goal Weight notifications?</string>
+    <string name="goal_weight_title">Set a Goal Weight</string>
+    <string name="goal_weight_hint">Enter the weight that you desire to reach!</string>
+    <string name="edit_button_text">Edit weight entry</string>
+    <string name="delete_button_text">Delete weight entry</string>
+    <string name="date_hint">Edit the date</string>
+    <string name="create_account_title">Create Account</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="edit_the_weight">Edit the weight</string>
+</resources>

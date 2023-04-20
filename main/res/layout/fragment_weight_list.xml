@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weight_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@id/floatingActionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        style="@style/Widget.Design.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/add_button"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@android:color/background_light" />
+
+    <ImageButton
+        android:id="@+id/settings_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/settings_icon_title"
+        android:padding="16dp"
+        android:src="@android:drawable/ic_menu_preferences"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight_recycler_view"
+        app:tint="@color/colorTextPrimary" />
+
+    <ImageButton
+        android:id="@+id/goal_weight_button"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="328dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/goal_weight_icon"
+        android:padding="16dp"
+
+        android:src="@android:drawable/btn_star_big_on"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weight_recycler_view"
+        app:layout_constraintVertical_bias="1.0"
+        app:tint="@android:color/holo_orange_dark"
+        tools:src="@android:drawable/btn_star_big_on" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

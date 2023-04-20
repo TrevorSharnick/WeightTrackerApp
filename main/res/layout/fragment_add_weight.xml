@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+    <TextView
+        android:id="@+id/add_daily_weight_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/add_daily_weight_title_text"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <EditText
+        android:id="@+id/edit_text_weight_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTextPrimary"
+        android:hint="@string/weight_value_hint"
+        android:inputType="numberDecimal"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/button_save_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:padding="8dp"
+        android:text="@string/save_button_label"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

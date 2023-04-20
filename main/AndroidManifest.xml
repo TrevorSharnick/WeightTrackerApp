@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WeightTrackerApplicationFinal"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".WeightListActivity"
+            android:label="Weight List">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+
+        <activity
+            android:name=".AddWeightActivity"
+            android:label="Add Weight"
+            android:parentActivityName=".WeightListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WeightListActivity" />
+        </activity>
+
+        <activity
+            android:name=".WeightDetailActivity"
+            android:label="Weight Detail"
+            android:parentActivityName=".WeightListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WeightListActivity" />
+        </activity>
+
+        <activity
+            android:name=".GoalWeightActivity"
+            android:label="Set Goal Weight"
+            android:parentActivityName=".WeightListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WeightListActivity" />
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings"
+            android:parentActivityName=".WeightListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WeightListActivity" />
+        </activity>
+        <activity
+            android:name=".CreateAccountActivity"
+            android:label="Create Account"
+            android:parentActivityName=".LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

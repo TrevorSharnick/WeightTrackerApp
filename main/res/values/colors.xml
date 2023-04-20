@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="colorPrimary">#1A1B1D</color>
+    <color name="colorPrimaryDark">#27292D</color>
+    <color name="colorPrimaryLight">#4A4A4D</color>
+    <color name="dark_blue">#1B2A3F</color>
+
+    <!-- Secondary colors -->
+    <color name="colorSecondary">#FDB813</color>
+    <color name="colorSecondaryDark">#DCA50F</color>
+    <color name="colorSecondaryLight">#FFE446</color>
+
+    <!-- Text colors -->
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextSecondary">#C2C2C2</color>
+
+    <!-- Background colors -->
+    <color name="colorBackgroundPrimary">#1A1B1D</color>
+    <color name="colorBackgroundSecondary">#27292D</color>
+
+    <!-- Button colors -->
+    <color name="colorButtonPrimary">#FDB813</color>
+    <color name="colorButtonPrimaryDark">#DCA50F</color>
+    <color name="colorButtonPrimaryLight">#FFE446</color>
+
+    <!-- Status bar color -->
+    <color name="colorStatusBar">#27292D</color>
+</resources>

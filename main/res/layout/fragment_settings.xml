@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title or label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- SMS permission request -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sms_permission_request"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+    <Button
+        android:id="@+id/permission_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grant_permission"/>
+    <TextView
+        android:id="@+id/permission_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/permission_status"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"/>
+
+    <!-- Notification settings -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notification_settings"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"/>
+
+
+
+    <!-- Goal weight achievement notification setting -->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/goal_weight_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goal_weight_notification"
+        android:textColor="@color/colorTextPrimary"
+        android:padding="16dp"/>
+
+</LinearLayout>

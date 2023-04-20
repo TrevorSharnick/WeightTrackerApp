@@ -1,0 +1,125 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.sharnick.weighttrackerapplicationfinal.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+
+        <action
+            android:id="@+id/action_loginFragment_to_weightListFragment"
+            app:destination="@id/weightListFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.sharnick.weighttrackerapplicationfinal.CreateAccountFragment"
+        android:label="Create Account"
+        tools:layout="@layout/fragment_create_account">
+
+        <action
+            android:id="@+id/action_createAccountFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/weightListFragment"
+        android:name="com.sharnick.weighttrackerapplicationfinal.WeightListFragment"
+        android:label="Weight List"
+        tools:layout="@layout/fragment_weight_list">
+
+        <action
+            android:id="@+id/action_weightListFragment_to_addWeightFragment"
+            app:destination="@id/addWeightFragment" />
+
+        <action
+            android:id="@+id/action_weightListFragment_to_weightDetailFragment"
+            app:destination="@id/weightDetailFragment" />
+
+        <action
+            android:id="@+id/action_weightListFragment_to_goalWeightFragment"
+            app:destination="@id/goalWeightFragment" />
+
+        <action
+            android:id="@+id/action_weightListFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addWeightFragment"
+        android:name="com.sharnick.weighttrackerapplicationfinal.AddWeightFragment"
+        android:label="Add Weight"
+        tools:layout="@layout/fragment_add_weight">
+
+        <action
+            android:id="@+id/action_addWeightFragment_to_weightListFragment"
+            app:destination="@id/weightListFragment"
+            app:popUpTo="@id/weightListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/weightDetailFragment"
+        android:name="com.sharnick.weighttrackerapplicationfinal.WeightDetailFragment"
+        android:label="Weight Detail"
+        tools:layout="@layout/fragment_weight_detail">
+
+        <argument
+            android:name="weightId"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/action_weightDetailFragment_to_weightListFragment"
+            app:destination="@id/weightListFragment"
+            app:popUpTo="@id/weightListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <activity
+        android:id="@+id/settingsActivity"
+        android:name="com.sharnick.weighttrackerapplicationfinal.SettingsActivity"
+        android:label="SettingsActivity" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.sharnick.weighttrackerapplicationfinal.SettingsFragment"
+        android:label="SettingsFragment">
+
+        <action
+            android:id="@+id/action_settingsFragment_to_weightListFragment"
+            app:destination="@id/weightListFragment"
+            app:popUpTo="@id/weightListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/goalWeightFragment"
+        android:name="com.sharnick.weighttrackerapplicationfinal.GoalWeightFragment"
+        android:label="Goal Weight"
+        tools:layout="@layout/fragment_goal_weight">
+
+        <action
+            android:id="@+id/action_goalWeightFragment_to_weightListFragment"
+            app:destination="@id/weightListFragment"
+            app:popUpTo="@id/weightListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <activity
+        android:id="@+id/goalWeightActivity"
+        android:name="com.sharnick.weighttrackerapplicationfinal.GoalWeightActivity"
+        android:label="GoalWeightActivity" />
+
+</navigation>
